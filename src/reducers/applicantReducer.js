@@ -2,5 +2,10 @@
 
 export default function applicantReducer(state = {applicants: []}, action) {
 
-    return action.payload 
+    switch(action.type){
+        case 'FETCH_APPLICANTS':
+            return {applicants: state.applicants}
+        default:
+            return state;
+    }
 }

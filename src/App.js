@@ -1,21 +1,18 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import './App.css';
-import {fetchApplicants} from './actions/fetchApplicants'
+
+import ApplicantsContainer from './containers/ApplicantsContainer'
 
 class App extends Component {
-
-  componentDidMount(){
-    this.props.fetchApplicants({type: 'FETCH_APPLICANTS', payload: {name:'applicant'}})
-  }
 
   render(){
   return (
     <div className="App">
-      App
+      <ApplicantsContainer/>
     </div>
   );
   }
 }
 
-export default connect(null, {fetchApplicants})(App);
+export default connect()(App);

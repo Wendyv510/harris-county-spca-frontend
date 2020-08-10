@@ -1,10 +1,13 @@
 import React, {Component} from 'react';
-
+import {connect} from 'react-redux';
 import './App.css';
+import {fetchApplicants} from './actions/fetchApplicants'
 
 class App extends Component {
 
-  
+  componentDidMount(){
+    this.props.fetchApplicants({type: 'FETCH_APPLICANTS', payload: {name:'applicant'}})
+  }
 
   render(){
   return (
@@ -15,4 +18,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default connect(null, {fetchApplicants})(App);

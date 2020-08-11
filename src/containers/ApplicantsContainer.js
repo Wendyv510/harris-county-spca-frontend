@@ -20,10 +20,10 @@ class ApplicantsContainer extends Component {
     }
 }
 
-const mapStateToProps = state => {
-    return(
+const mapStateToProps = (state) => {
+    return{
         applicants: state.applicants
-    )
+    }
 }
 
 export default connect(mapStateToProps, {fetchApplicants})(ApplicantsContainer) 

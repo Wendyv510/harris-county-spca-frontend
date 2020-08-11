@@ -7,7 +7,7 @@ export default function catReducer(
 
     switch(action.type){
         case 'FETCH_CATS':
-            return (cats: cats.payload)
+            return cats; cats.payload
         default:
             return state;
     }

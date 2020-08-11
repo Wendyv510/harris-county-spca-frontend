@@ -7,7 +7,7 @@ export default function applicantReducer(
 
     switch(action.type){
         case 'FETCH_APPLICANTS':
-            return {applicants: applicants.payload}
+            return (applicants: applicants.payload)
         default:
             return state;
     }

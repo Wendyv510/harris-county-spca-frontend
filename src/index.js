@@ -9,6 +9,8 @@ import { applicantReducer } from '../reducers/applicantReducer';
 import { catReducer } from '../reducers/catReducer';
 import { dogReducer } from '../reducers/dogReducer'; 
 import App from './App';
+
+
 import * as serviceWorker from './serviceWorker';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

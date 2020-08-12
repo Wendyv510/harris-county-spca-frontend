@@ -5,9 +5,9 @@ import {createStore, applyMiddleware, compose} from 'redux';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import { combineReducers } from 'redux';
-import { applicantReducer } from '../reducers/applicantReducer';
-import { catReducer } from '../reducers/catReducer';
-import { dogReducer } from '../reducers/dogReducer'; 
+import  applicantReducer  from './reducers/applicantReducer';
+import  catReducer  from './reducers/catReducer';
+import  dogReducer  from './reducers/dogReducer'; 
 import App from './App';
 
 

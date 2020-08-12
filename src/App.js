@@ -4,9 +4,9 @@ import {connect} from 'react-redux';
 import './App.css';
 import Navbar from './containers/Navbar' 
 import Home from './components/Home'
-import Applicants from './components/Applicants' 
+//import Applicants from './components/Applicants' 
 import ApplicantForm from './components/ApplicantForm'
-import ApplicantsContainer from './containers/ApplicantsContainer'
+//import ApplicantsContainer from './containers/ApplicantsContainer'
 import Cats from './components/Cats'
 import Dogs from './components/Dogs'
 

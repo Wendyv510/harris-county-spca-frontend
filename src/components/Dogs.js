@@ -5,7 +5,7 @@ const Dogs = (props) => {
 
     return(
         <div className="Dogs">
-            Dogs 
+            {props.dogs.map((dog) => <li key={dog.id}> {dog.name} {dog.age} {dog.type} {dog.image_url}</li>)}
         </div>
     )
 }

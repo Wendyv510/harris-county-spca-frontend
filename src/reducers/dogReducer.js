@@ -7,7 +7,7 @@ export default function dogReducer(
 
     switch(action.type){
         case 'FETCH_DOGS':
-            return dogs; dogs.payload
+            return {dogs: action.payload}
         default:
             return state;
     }

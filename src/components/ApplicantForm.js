@@ -7,24 +7,24 @@ class ApplicantForm extends Component {
             <div className="ApplicantForm">
                 <form>
                     <div>
-                        <input type="text" name="name" placeholder="Name"/>
                         <label htmlFor="name">Name</label>
+                        <input type="text" name="name" placeholder="Name"/>
                     </div>
                     <div>
-                        <input type="text" name="pet_name" placeholder="Pet's Name"/>
                         <label htmlFor="pet_name">Pet's Name</label>
+                        <input type="text" name="pet_name" placeholder="Pet's Name"/>
                     </div>
                     <div>
-                        <input type="text" name="email_address" placeholder="Email"/>
                         <label htmlFor="email_address">Email</label>
+                        <input type="text" name="email_address" placeholder="Email"/>
                     </div>
                     <div>
-                        <input type="text" name="phone_number" placeholder="(555)555-5555"/>
                         <label htmlFor="phone_number">Phone Number</label>
+                        <input type="text" name="phone_number" placeholder="(555)555-5555"/>
                     </div>
                     <div>
-                        <input type="text" name="address" placeholder="Address"/>
                         <label htmlFor="address">Address</label>
+                        <input type="text" name="address" placeholder="Address"/>
                     </div>
                     <div>
                         <input type="submit" value="Apply"/>

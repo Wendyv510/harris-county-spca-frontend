@@ -2,7 +2,7 @@
 
 export function fetchCats(action){
     return(dispatch) => {
-    fetch('http://localhost:3000/api/v1/cats',{
+    fetch('http://localhost:3001/api/v1/cats',{
       method: 'GET' 
     })
     .then(response => response.json())

@@ -1,4 +1,6 @@
 import React, {Component} from 'react'
+import { connect } from 'react-redux'
+import addApplicant from '../actions/addApplicant'
 
 class ApplicantForm extends Component {
     state={
@@ -11,11 +13,11 @@ class ApplicantForm extends Component {
 
     handleChange = event => {
         this.setState({
-            name: event.target.name.value,
-            pet_name: event.target.pet_name.value,
-            email_address: event.target.email_address.value,
-            phone_number: event.target.phone_number.value,
-            address: event.target.address.value
+            [event.target.name]: event.target.value,
+            [event.target.pet_name]: event.target.value,
+            [event.target.email_address]: event.target.value,
+            [event.target.phone_number]: event.target.value,
+            [event.target.address]: event.target.value
         })
     }
 
@@ -64,5 +66,6 @@ class ApplicantForm extends Component {
     }
 }
 
-export default ApplicantForm 
+
+export default connect(null, {addApplicant})(ApplicantForm) 
 

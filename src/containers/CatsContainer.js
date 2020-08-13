@@ -12,7 +12,7 @@ class CatsContainer extends Component {
     render(){
         return(
             <div className="cats">
-                <Cats/>
+                <Cats felines = {this.props.cats}/>
             </div>
         )
     }

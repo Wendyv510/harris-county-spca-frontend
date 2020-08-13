@@ -1,14 +1,14 @@
 
 
-export function fetchCats(action){
+export function fetchCats(){
     return(dispatch) => {
-    fetch('http://localhost:3001/api/v1/cats',{
-      method: 'GET' 
-    })
+    return fetch('http://localhost:3001/api/v1/cats')
     .then(response => response.json())
     .then(cats => dispatch({
         type: 'FETCH_CATS',
         payload: cats
+
     }))
+    .catch(err => console.log(err))
     }
 }

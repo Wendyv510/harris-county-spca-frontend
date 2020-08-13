@@ -1,5 +1,5 @@
 
-export default addApplicant = (data) => {
+const addApplicant = (data) => {
     return(dispatch) => {
         fetch('http://localhost:3001/api/v1/applicants', {
             headers: {
@@ -13,3 +13,5 @@ export default addApplicant = (data) => {
         .then(applicant => dispatch({type:'ADD_APPLICANT', payload:applicant}))
     }
 }
+
+export default addApplicant

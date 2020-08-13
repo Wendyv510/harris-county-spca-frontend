@@ -9,6 +9,7 @@ export default addApplicant = (data) => {
             method: 'POST',
             body: JSON.stringify(data)
         })
-
+        .then(response => response.json())
+        .then(applicant => dispatch({type:'ADD_APPLICANT', payload:applicant}))
     }
 }

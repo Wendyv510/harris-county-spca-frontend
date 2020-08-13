@@ -45,14 +45,27 @@
   background-color: #EEEEEE;
 }
 
-ul#navbar li {
-  float:left;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
-ul#navbar li a {
+li {
+  float: left;
+}
+
+li a {
   display: block;
-  color: #000000;
-  font-weight:bold;
-  padding: 8px 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
 }

@@ -9,7 +9,7 @@ export default function applicantReducer(
         case 'FETCH_APPLICANTS':
             return {applicants: action.payload}
         case 'ADD_APPLICANT': 
-            return {applicants: state.applicants.concat(action.payload.text)}
+            return {...state, applicants:[...state.applicants, action.payload]}
         default:
             return state;
     }

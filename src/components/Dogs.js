@@ -5,7 +5,7 @@ const Dogs = (props) => {
 
     return(
         <div className="Dogs">
-           {/* {props.mutts.map((dog) => <li key={dog.id}> {dog.name} {dog.age} {dog.type} {dog.image_url}</li>)} */}
+           {props.mutts.map((dog) => <li key={dog.id}> {dog.attributes.name} {dog.attributes.age} {dog.attributes.breed} <img src = {dog.attributes.image_url} alt="kitten2"></img></li>)}
         </div>
     )
 }

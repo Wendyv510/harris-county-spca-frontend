@@ -6,8 +6,14 @@ import { connect } from 'react-redux'
 class CatsContainer extends Component {
 
     componentDidMount(){
-        this.props.fetchCats()
-      }
+        //this.props.fetchCats()
+      
+        fetch('https://localhost:3001/api/v1/cats')
+        .then(response => response.json())
+        .then(cats => console.log(cats) )
+        
+    }
+    
 
     render(){
         return(

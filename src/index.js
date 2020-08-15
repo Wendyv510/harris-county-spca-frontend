@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import {createStore, applyMiddleware, compose} from 'redux';
+import {combineReducers, createStore, applyMiddleware, compose} from 'redux';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
-import { combineReducers } from 'redux';
+//import { combineReducers } from 'redux';
 import  applicantReducer  from './reducers/applicantReducer';
 import  catReducer  from './reducers/catReducer';
 import  dogReducer  from './reducers/dogReducer'; 
@@ -16,12 +16,12 @@ import * as serviceWorker from './serviceWorker';
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const rootReducer = combineReducers({
-        applicants: applicantReducer, 
-        cats: catReducer,
-        dogs: dogReducer
+        applicantReducer, 
+        catReducer,
+        dogReducer
 })
 
-let store = createStore(dogReducer, composeEnhancers(applyMiddleware(thunk)))
+let store = createStore(catReducer, composeEnhancers(applyMiddleware(thunk)))
 
 ReactDOM.render(
   <React.StrictMode>

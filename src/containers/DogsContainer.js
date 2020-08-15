@@ -6,11 +6,11 @@ import { connect } from 'react-redux'
 class DogsContainer extends Component {
 
     componentDidMount(){
-      //  this.props.fetchDogs()
+        this.props.fetchDogs()
       
-        fetch('https://localhost:3001/api/v1/questions')
-        .then(response => response.json())
-        .then(dogs => console.log(dogs) )
+        // fetch('https://localhost:3001/api/v1/questions')
+        // .then(response => response.json())
+        // .then(dogs => console.log(dogs) )
         
     }
     

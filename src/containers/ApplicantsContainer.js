@@ -14,6 +14,7 @@ class ApplicantsContainer extends Component {
         return(
             <div className="applicants">
                 <Applicants people={this.props.applicants}/>
+                <br></br><br></br><br></br><br></br><br></br><br></br>
                 <ApplicantForm/>
             </div>
         )

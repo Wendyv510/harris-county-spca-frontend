@@ -21,7 +21,7 @@ const rootReducer = combineReducers({
         dogReducer
 })
 
-let store = createStore(applicantReducer, composeEnhancers(applyMiddleware(thunk)))
+let store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunk)))
 
 ReactDOM.render(
   <React.StrictMode>

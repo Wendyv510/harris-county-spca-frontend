@@ -8,9 +8,7 @@ import { combineReducers } from 'redux';
 import  applicantReducer  from './reducers/applicantReducer';
 import  catReducer  from './reducers/catReducer';
 import  dogReducer  from './reducers/dogReducer';
-
 import App from './App';
-
 
 import * as serviceWorker from './serviceWorker';
 
@@ -22,7 +20,7 @@ const rootReducer = combineReducers({
        dogs: dogReducer
 })
 
-let store = createStore(applicantReducer, composeEnhancers(applyMiddleware(thunk)))
+let store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunk)))
 
 ReactDOM.render(
   <React.StrictMode>

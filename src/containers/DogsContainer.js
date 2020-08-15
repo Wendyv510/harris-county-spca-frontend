@@ -7,11 +7,6 @@ class DogsContainer extends Component {
 
     componentDidMount(){
         this.props.fetchDogs()
-      
-        // fetch('https://localhost:3001/api/v1/dogs')
-        // .then(response => response.json())
-        // .then(dogs => console.log(dogs) )
-        
     }
     
 

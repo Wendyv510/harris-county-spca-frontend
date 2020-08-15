@@ -3,15 +3,11 @@ import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom
 import {connect} from 'react-redux';
 import './App.css';
 import Navbar from './containers/Navbar'
-import Home from './components/Home'
-//import Applicants from './components/Applicants' 
+import Home from './components/Home' 
 import ApplicantForm from './components/ApplicantForm'
 import ApplicantsContainer from './containers/ApplicantsContainer'
-
 import CatsContainer from './containers/CatsContainer'
 import DogsContainer from './containers/DogsContainer' 
-
-
 
 class App extends Component {
   

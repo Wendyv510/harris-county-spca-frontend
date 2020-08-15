@@ -6,14 +6,15 @@ import Navbar from './containers/Navbar'
 import Home from './components/Home'
 //import Applicants from './components/Applicants' 
 import ApplicantForm from './components/ApplicantForm'
-//import ApplicantsContainer from './containers/ApplicantsContainer'
-//import Cats from './components/Cats'
+import ApplicantsContainer from './containers/ApplicantsContainer'
+
 import CatsContainer from './containers/CatsContainer'
-import Dogs from './components/Dogs'
+import DogsContainer from './containers/DogsContainer' 
+
 
 
 class App extends Component {
-
+  
   render(){
   return (
     <div>
@@ -22,7 +23,8 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component = {Home}/>
             <Route exact path="/cats" component = {CatsContainer}/>
-            <Route exact path="/dogs" component = {Dogs}/>
+            <Route exact path="/dogs" component = {DogsContainer}/>
+            <Route exact path="/applicants" component = {ApplicantsContainer}/>
             <Route exact path="/apply" component = {ApplicantForm}/>
             <Redirect from= "/apply" to= '/'/>
           </Switch>

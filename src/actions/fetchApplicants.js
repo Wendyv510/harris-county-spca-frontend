@@ -1,6 +1,6 @@
 
 
-export function fetchApplicants(action){
+export function fetchApplicants(){
   return(dispatch) => {
     fetch('https://localhost:3001/api/v1/applicants')
      .then(response => response.json())

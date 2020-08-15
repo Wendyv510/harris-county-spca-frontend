@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Applicants = (props) => {
-    
+    console.log(props)
 
     return(
         <div className="Applicants">

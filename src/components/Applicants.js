@@ -5,7 +5,7 @@ const Applicants = (props) => {
 
     return(
         <div className="Applicants">
-            {props.applicants.map(applicant => <li key={applicant.id}> {applicant.name} {applicant.pet_name} {applicant.email_address} {applicant.phone_number} {applicant.address}</li>)}
+            {props.people.map(person => <li key={person.id}> {person.attributes.name} {person.attributes.pet_name} {person.attributes.email_address} {person.attributes.phone_number} {person.attributes.address}</li>)}
         </div>
     )
 }

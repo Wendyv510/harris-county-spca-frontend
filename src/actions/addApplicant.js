@@ -10,7 +10,7 @@ const addApplicant = (data) => {
             body: JSON.stringify(data)
         })
         .then(response => response.json())
-        .then(applicant => dispatch({type:'ADD_APPLICANT', payload:applicant}))
+        .then(applicant => dispatch({type:'ADD_APPLICANT', payload:applicant.data}))
     }
 }
 

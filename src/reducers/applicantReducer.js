@@ -7,9 +7,9 @@ export default function applicantReducer(
 
     switch(action.type){
         case 'FETCH_APPLICANTS':
-            return {applicants: action.payload}
+            return {applicants: action.payload.data}
         case 'ADD_APPLICANT': 
-            return {...state, applicants:[...state.applicants, action.payload]}
+            return {...state, applicants:[...state.applicants, action.payload.data]}
         default:
             return state;
     }

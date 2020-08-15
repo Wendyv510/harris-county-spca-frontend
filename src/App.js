@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom' 
+import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom' 
 import {connect} from 'react-redux';
 import './App.css';
 import Navbar from './containers/Navbar'
@@ -24,6 +24,7 @@ class App extends Component {
             <Route exact path="/cats" component = {CatsContainer}/>
             <Route exact path="/dogs" component = {Dogs}/>
             <Route exact path="/apply" component = {ApplicantForm}/>
+            <Redirect from= "/apply" to= '/'/>
           </Switch>
       </Router>
     </div>

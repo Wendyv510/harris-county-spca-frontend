@@ -13,7 +13,7 @@ class ApplicantsContainer extends Component {
     render(){
         return(
             <div className="applicants">
-                <Applicants/>
+                <Applicants people={this.props.applicants}/>
                 <ApplicantForm/>
             </div>
         )

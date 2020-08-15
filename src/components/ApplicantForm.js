@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import { connect } from 'react-redux'
 import addApplicant from '../actions/addApplicant'
+import {Redirect} from 'react-router-dom';
 
 class ApplicantForm extends Component {
     state={
@@ -31,6 +32,7 @@ class ApplicantForm extends Component {
             phone_number: '',
             address: ''
         })
+        return  <Redirect  to="/" />
     }
 
     render(){

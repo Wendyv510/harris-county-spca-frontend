@@ -4,14 +4,16 @@ import addApplicant from '../actions/addApplicant'
 import {Redirect} from 'react-router-dom';
 
 class ApplicantForm extends Component {
-    state={
+    constructor(props){
+        super(props)
+    this.state={
         name: '',
         pet_name: '',
         email_address: '',
         phone_number: '',
         address: ''
     }
-
+    }
     handleChange = event => {
         this.setState({
             [event.target.name]: event.target.value,
@@ -38,26 +40,26 @@ class ApplicantForm extends Component {
     render(){
         return(
             <div className="ApplicantForm">
-                <form onSubmit = {event => this.handleSubmit(event)}>
+                <form onSubmit = {this.handleSubmit}>
                     <div>
                         <label htmlFor="name">Name</label>
-                        <input type="text" name="name" onChange = {event => this.handleChange(event)} value={this.state.name} placeholder="Name"/>
+                        <input type="text" name="name" onChange = {this.handleChange} value={this.state.name} placeholder="Name"/>
                     </div>
                     <div>
                         <label htmlFor="pet_name">Pet's Name</label>
-                        <input type="text" name="pet_name" onChange = {event => this.handleChange(event)} value={this.state.pet_name} placeholder="Pet's Name"/>
+                        <input type="text" name="pet_name" onChange = {this.handleChange} value={this.state.pet_name} placeholder="Pet's Name"/>
                     </div>
                     <div>
                         <label htmlFor="email_address">Email</label>
-                        <input type="text" name="email_address" onChange = {event => this.handleChange(event)} value={this.state.email_address} placeholder="Email"/>
+                        <input type="text" name="email_address" onChange = {this.handleChange} value={this.state.email_address} placeholder="Email"/>
                     </div>
                     <div>
                         <label htmlFor="phone_number">Phone Number</label>
-                        <input type="text" name="phone_number" onChange = {event => this.handleChange(event)} value={this.state.phone_number} placeholder="(555)555-5555"/>
+                        <input type="text" name="phone_number" onChange = {this.handleChange} value={this.state.phone_number} placeholder="(555)555-5555"/>
                     </div>
                     <div>
                         <label htmlFor="address">Address</label>
-                        <input type="text" name="address" onChange = {event => this.handleChange(event)} value={this.state.address} placeholder="Address"/>
+                        <input type="text" name="address" onChange = {this.handleChange} value={this.state.address} placeholder="Address"/>
                     </div>
                     <div>
                         <input type="submit" value="Apply"/>

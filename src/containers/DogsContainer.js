@@ -21,7 +21,7 @@ class DogsContainer extends Component {
 
 const mapStateToProps = (state) => {
     return{
-        dogs: state.dogs
+        dogs: state.dogs.dogs
     }
 }
 

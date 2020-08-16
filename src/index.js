@@ -15,9 +15,9 @@ import * as serviceWorker from './serviceWorker';
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const rootReducer = combineReducers({
-       applicants: applicantReducer, 
-       cats: catReducer,
-       dogs: dogReducer
+        applicantReducer, 
+        catReducer,
+        dogReducer
 })
 
 let store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunk)))

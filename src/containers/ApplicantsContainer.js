@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import Applicants from '../components/Applicants'
+
 import {fetchApplicants} from '../actions/fetchApplicants'
 import ApplicantForm from '../components/ApplicantForm' 
 import { connect } from 'react-redux'
@@ -7,7 +8,7 @@ import { connect } from 'react-redux'
 class ApplicantsContainer extends Component {
 
     componentDidMount(){
-        this.props.fetchApplicants()
+        this.props.fetchApplicants();
       }
 
     render(){

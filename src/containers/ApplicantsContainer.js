@@ -24,7 +24,7 @@ class ApplicantsContainer extends Component {
 
 const mapStateToProps = (state) => {
     return{
-        applicants: state.applicants
+        applicants: state.applicantReducer.applicants
     }
 }
 

@@ -22,7 +22,7 @@ class CatsContainer extends Component {
 
 const mapStateToProps = (state) => {
     return{
-        cats: state.cats
+        cats: state.catReducer.cats
     }
 }
 

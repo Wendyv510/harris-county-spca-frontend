@@ -69,5 +69,5 @@ class ApplicantForm extends Component {
     }
 }
 
-export default connect(null, {addApplicant})(ApplicantForm) 
+export default connect(null,{addApplicant})(ApplicantForm) 
 

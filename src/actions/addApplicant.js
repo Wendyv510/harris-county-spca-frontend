@@ -1,6 +1,6 @@
 
 export const addApplicant = (data) => {
-    return(dispatch) => {
+    return (dispatch) => {
         fetch('https://localhost:3001/api/v1/applicants', {
             method: 'POST',
             body: JSON.stringify(data),

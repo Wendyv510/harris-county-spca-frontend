@@ -4,16 +4,15 @@ import addApplicant from '../actions/addApplicant'
 import {Redirect} from 'react-router-dom';
 
 class ApplicantForm extends Component {
-    constructor(props){
-        super(props)
-    this.state={
+    
+    state={
         name: '',
         pet_name: '',
         email_address: '',
         phone_number: '',
         address: ''
     }
-    }
+    
     handleChange = event => {
         this.setState({
             [event.target.name]: event.target.value,

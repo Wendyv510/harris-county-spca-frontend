@@ -1,8 +1,6 @@
 import React, {Component} from 'react'
 import Applicants from '../components/Applicants'
-
 import {fetchApplicants} from '../actions/fetchApplicants'
-import ApplicantForm from '../components/ApplicantForm' 
 import { connect } from 'react-redux'
 
 class ApplicantsContainer extends Component {
@@ -15,8 +13,6 @@ class ApplicantsContainer extends Component {
         return(
             <div className="applicants">
                 <Applicants people={this.props.applicants}/>
-                <br></br><br></br><br></br><br></br><br></br><br></br>
-                <ApplicantForm/>
             </div>
         )
     }
